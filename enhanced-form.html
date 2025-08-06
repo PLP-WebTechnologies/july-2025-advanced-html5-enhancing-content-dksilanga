@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Thuo Software Engineering Exam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e1eebf;
+        }
+        header, section, footer {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaeaea;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        audio, video {
+            width: 100%;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .inline-label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .required:after {
+            content: " *";
+            color: #e74c3c;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniel Thuo PLP Software Engineering Student Portfolio</h1>
+        <p>Demonstrating HTML5 features for Web Development Exam</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>HTML Lists Demonstration</h2>
+        
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div style="width: 48%;">
+                <h3>Programming Languages I Know</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            
+            <div style="width: 48%;">
+                <h3>Learning Path</h3>
+                <ol>
+                    <li>Basic Programming Concepts</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Web Development Fundamentals</li>
+                    <li>Database Systems</li>
+                    <li>Software Engineering Principles</li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3>Technical Terms Glossary</h3>
+        <dl>
+            <dt>API</dt>
+            <dd>Application Programming Interface - a set of protocols for building software applications</dd>
+            
+            <dt>DOM</dt>
+            <dd>Document Object Model - a programming interface for web documents</dd>
+            
+            <dt>REST</dt>
+            <dd>Representational State Transfer - an architectural style for distributed systems</dd>
+        </dl>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>HTML Tables Demonstration</h2>
+        
+        <h3>Course Grades</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Instructor</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Structures</td>
+                    <td>Dr. Smith</td>
+                    <td>4</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Prof. Johnson</td>
+                    <td>3</td>
+                    <td>A-</td>
+                </tr>
+                <tr>
+                    <td>Database Systems</td>
+                    <td>Dr. Lee</td>
+                    <td>4</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Algorithms</td>
+                    <td>Prof. Brown</td>
+                    <td>4</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Project Timeline</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Milestone</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Planning</td>
+                    <td>Requirements gathering and analysis</td>
+                    <td>2023-09-01</td>
+                    <td>2023-09-15</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>System architecture and UI mockups</td>
+                    <td>2023-09-16</td>
+                    <td>2023-09-30</td>
+                </tr>
+                <tr>
+                    <td>Implementation</td>
+                    <td>Coding and unit testing</td>
+                    <td>2023-10-01</td>
+                    <td>2023-11-15</td>
+                </tr>
+                <tr>
+                    <td>Testing</td>
+                    <td>System integration and testing</td>
+                    <td>2023-11-16</td>
+                    <td>2023-11-30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+   <section id="media">
+    <h2>HTML Media Demonstration</h2>
+    
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div style="flex: 1; min-width: 300px;">
+            <h3>Project Screenshot</h3>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Code editor with web development project">
+                <figcaption>Recent web development project</figcaption>
+            </figure>
+        </div>
+        
+        <div style="flex: 1; min-width: 300px;">
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="note">Sample audio placeholder for demonstration.</p>
+        </div>
+    </div>
+    
+    <h3>Video Demonstration</h3>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pm5OVxpul48?list=PL0eyrZgxdwhwNC5ppZo_dYGVjerQY3xYU" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+    <p class="note">HTML Tutorial for Beginners video from YouTube.</p>
+</section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Enhanced HTML5 Form</h2>
+        <p>Please fill out this form to contact me regarding software engineering opportunities.</p>
+        
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+                
+                <div class="form-group">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" 
+                           placeholder="Enter your full name" autocomplete="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="your.email@example.com" autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                           placeholder="123-456-7890" autocomplete="tel">
+                    <p class="note">Format: 123-456-7890</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate" max="2005-12-31" autocomplete="bday">
+                </div>
+                
+                <div class="form-group">
+                    <label for="website">Personal Website</label>
+                    <input type="url" id="website" name="website" placeholder="https://yourportfolio.com">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Education & Experience</legend>
+                
+                <div class="form-group">
+                    <label for="university" class="required">University</label>
+                    <input type="text" id="university" name="university" required 
+                           placeholder="Your university name" autocomplete="organization">
+                </div>
+                
+                <div class="form-group">
+                    <label for="major" class="required">Major</label>
+                    <input type="text" id="major" name="major" required 
+                           placeholder="Your field of study">
+                </div>
+                
+                <div class="form-group">
+                    <label for="gradyear" class="required">Expected Graduation Year</label>
+                    <input type="number" id="gradyear" name="gradyear" required 
+                           min="2023" max="2030" step="1" placeholder="2025">
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Years of Programming Experience</label>
+                    <input type="number" id="experience" name="experience" 
+                           min="0" max="20" placeholder="3">
+                </div>
+                
+                <div class="form-group">
+                    <label>Technical Skills</label>
+                    <div>
+                        <label class="inline-label"><input type="checkbox" name="skills" value="html"> HTML/CSS</label>
+                        <label class="inline-label"><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                        <label class="inline-label"><input type="checkbox" name="skills" value="python"> Python</label>
+                        <label class="inline-label"><input type="checkbox" name="skills" value="java"> Java</label>
+                        <label class="inline-label"><input type="checkbox" name="skills" value="sql"> SQL</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Opportunity Details</legend>
+                
+                <div class="form-group">
+                    <label for="opportunity" class="required">Opportunity Type</label>
+                    <select id="opportunity" name="opportunity" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="internship">Internship</option>
+                        <option value="fulltime">Full-time Position</option>
+                        <option value="parttime">Part-time Position</option>
+                        <option value="contract">Contract Work</option>
+                        <option value="research">Research Opportunity</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Work Arrangement</label>
+                    <div>
+                        <label class="inline-label"><input type="radio" name="arrangement" value="onsite" required> On-site</label>
+                        <label class="inline-label"><input type="radio" name="arrangement" value="remote"> Remote</label>
+                        <label class="inline-label"><input type="radio" name="arrangement" value="hybrid"> Hybrid</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startdate">Preferred Start Date</label>
+                    <input type="date" id="startdate" name="startdate" min="2023-09-01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="salary">Salary Expectations ($/year)</label>
+                    <input type="range" id="salary" name="salary" min="30000" max="150000" step="5000" value="70000">
+                    <output for="salary" id="salaryValue">70,000</output>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div class="form-group">
+                    <label for="github">GitHub Profile</label>
+                    <input type="url" id="github" name="github" placeholder="https://github.com/yourusername">
+                </div>
+                
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                </div>
+                
+                <div class="form-group">
+                    <label for="resume">Upload Resume (PDF only)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf">
+                    <p class="note">Maximum file size: 5MB</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="required">Cover Letter</label>
+                    <textarea id="message" name="message" required minlength="100" 
+                              placeholder="Tell me about the opportunity and why you think I'd be a good fit..." 
+                              rows="6"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reference">Reference Code (if applicable)</label>
+                    <input type="text" id="reference" name="reference" readonly value="STUDENT2023">
+                </div>
+                
+                <div class="form-group">
+                    <label class="inline-label">
+                        <input type="checkbox" name="terms" required> I agree to the <a href="#">privacy policy</a> and <a href="#">terms of use</a>
+                    </label>
+                </div>
+            </fieldset>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Daniel Thuo Software Engineering Student | Exam Submission</p>
+    </footer>
+
+    <script>
+        // Simple script to display range value (not for validation)
+        document.getElementById('salary').addEventListener('input', function() {
+            document.getElementById('salaryValue').value = new Intl.NumberFormat().format(this.value);
+        });
+    </script>
+</body>
+</html>
